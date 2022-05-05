@@ -1,1 +1,120 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge" >
+        <link rel="stylesheet" href="./assets/style.css">
+        <title>Jermaine's Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <span class="span-background title">
+                <h1>Jermaine Walters</h1>
+            </span>
+            <nav>
+                <ul class="nav-effects">
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+
+                    <li>
+                        <a href="contact-me">Contact Me</a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/WebDevResume.docx">Resume</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-subtitle">
+                <span class="span-background opacity">My Current Work!</span>
+            </div>
+        </section>
+
+        <article>
+            <div id="about-me" class="about-me-wrapper"></div>
+            <div class="about-me-grid-container"></div>
+            <div class="about-me-item about-me-title">
+                <p>About me</p>
+            </div>
+            <div class="about-me-item">
+                <p>I am currently enrolled in Michigan State University's web development bootcamp where I am learning the necessary skills for a career change. The goal is to obtain an internship or junior development role before the end of this course. Prior to this I worked in the automotive industry as a finance manager and sales representative for six years and two years respectively. As a finance manager I used analytical and critical thinking to work through problems with my team to facilitate financing and complete sales.</p>
+            </div>
+        </article>
+
+        <article>
+            <div id="work" class="work-wrapper">
+                <div class="work-grid-container">`
+                    <div class="work-item work-title">
+                        <p>Work</p>
+                    </div>
+                    <div onclick="navigate('taskinator')" alt="image showing taskinator landing page" title="taskinator landing page" target="_blank" style="cursor:pointer;" class="work-item-project taskinator">
+                        <span class="span-background">
+                            <h3>Taskinator</h3>
+                            <span class="lower-text">HTML/CSS/JS</span>
+                        </span>
+                    </div>
+                    <div onclick="navigate('work-day-scheduler')" alt="image showing work-day-scheduler landing page" title="work-day-scheduler landing page" target="_blank" style="cursor:pointer;" class="work-item-project work-day-scheduler">
+                        <span class="span-background">
+                            <h3>Work Day Scheduler</h3>
+                            <span class="lower-text">HTML/CSS/JS</span>
+                        </span>
+                    </div>
+                    <div onclick="navigate('run-buddy')" alt="image showing run-buddy landing page" title="run-buddy landing page" target="_blank" style="cursor:pointer;" class="work-item-project run-buddy">
+                        <span class="span-background">
+                            <h3>Run Buddy</h3>
+                            <span class="lower-text">HTML/CSS</span>
+                        </span>
+                    </div>
+                    <div onclick="navigate('horiseon')" alt="image showing horiseon landing page" title="horiseon landing page" target="_blank" style="cursor:pointer;" class="work-item-project horiseon">
+                        <span class="span-background">
+                            <h3>Horiseon</h3>
+                            <span class="lower-text">HTML/CSS</span>
+                        </span>
+                    </div>
+                    <div onclick="navigate('taskmaster-pro')" alt="image showing taskmaster-pro landing page" title="taskmaster-pro landing page" target="_blank" style="cursor:pointer;" class="work-item-project taskmaster-pro">
+                        <span class="span-background">
+                            <h3>Taskmaster Pro</h3>
+                            <span class="lower-text">HTML/CSS/JS</span>
+                        </span>
+                    </div>
+                    <!-- <div onclick="navigate('coding-quiz')" alt="image showing coding-quiz landing page" title="coding-quiz landing page" target="_blank" style="cursor:pointer;" class="work-item-project coding-quiz">
+                       <span class="span-background">
+                            <h3>Coding Quiz</h3>
+                            <span class="lower-text">HTML/CSS/JS</span>
+                        </span>
+                    </div> -->
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <div id="contact-me" class="footer-wrapper">
+                <div class="footer-container">
+                    <div class="footer-grid-item contact-me">
+                        Contact Me
+                    </div>
+                    <div class="footer-grid-item phone">
+                        <a href="tel:248-812-8535" class="nav-effects">248-812-8535</a>
+                    </div>
+                    <div class="footer-grid-item email">
+                        <a href="mailto:walte1jj@gmail.com">walte1jj@gmail.com</a>
+                    </div>
+                    <div class="footer-grid-item gitHub">
+                        <a href="https://github.com/walte1jj/" target="_blank">gitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/index.js"></script>
+    </body>
+</html>
