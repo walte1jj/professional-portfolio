@@ -57,18 +57,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-footer {
+/*footer {
     background-color: var(--header-footer-background-color);
     color: var(--lightskyblue);
-}
+}*/
 
-footer a {
+/*footer a {
     text-decoration: none;
     border-bottom: 2px solide var(--lightskyblue);
     color: var(--lightskyblue);
     font-size: 1.8vw;
     font-weight: bold;
-}
+}*/
 
 .nav-effects a:hover {
     color: var(--lightskyblue);
@@ -84,6 +84,39 @@ footer a {
     color: var(--lightskyblue);
     font-weight: bold;
     text-shadow: 0px 0px 20px var(--lightskyblue);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.footer-grid-item.contact-me {
+    padding-top: 0px;
+    font-size: 35px;
+    grid-row: 1 / span 4;
+    padding-right: 10px;
+    text-align: right;
+    border-right: 2px solid var(--about-me-work-border);
+    float: left; 
+    margin-right: 1vw;   
+    width: 12vw;
+}
+
+.footer-grid-item .phone {
+    grid-row: 3 span / 1;
+    grid-column: 1 / span 1;
+}
+
+.footer-grid-item .email {
+    grid-row: 3 span / 1;
+    grid-column: 2 / span 1;
+}
+
+.footer-grid-item .gitHub {
+    grid-row: 3 span / 1;
+    grid-column: 3 span / 1;
 }
 
 .hero {
@@ -153,7 +186,7 @@ footer a {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr repeat(3, 2fr);
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-rows: repeat(15, 1fr);
     gap: 10px 10px;
 }
 
@@ -183,7 +216,7 @@ footer a {
 
 .work-item-project.work-day-scheduler {
     grid-column: 3 / span 1;
-    grid-row: 7 / span 3;
+    grid-row: 7 / span 4;
     background-image: url(../assets/images/work-day-scheduler\ screenshot.png);
     background-size: cover;
     display: flex;
@@ -196,7 +229,7 @@ footer a {
 
 .work-item-project.run-buddy {
     grid-column: 2 / span 1;
-    grid-row: 7 / span 3;
+    grid-row: 7 / span 4;
     background-image: url(../assets/images/run-buddy\ screenshot.png);
     background-size: cover;
     display: flex;
@@ -209,7 +242,7 @@ footer a {
 
 .work-item-project.horiseon {
     grid-column: 2 / span 1;
-    grid-row: 10 / span 3;
+    grid-row: 11 / span 4;
     background-image: url(../assets/images/horiseon\ screenshot.png);
     background-size: cover;
     display: flex;
@@ -222,7 +255,7 @@ footer a {
 
 .work-item-project.taskmaster-pro {
     grid-column: 3 / span 1;
-    grid-row: 10 / span 3;
+    grid-row: 11 / span 4;
     background-image: url(../assets/images/taskmaster-pro\ screenshot.png);
     background-size: cover;
     display: flex;
@@ -236,4 +269,8 @@ footer a {
 .work-item-project.coding-quiz {
     display: block;
     color: var(--lightgray);
+}
+
+.span-background.project {
+    background-color: aqua;
 }
