@@ -63,51 +63,15 @@ body {
     text-shadow: 0px 0px 20px var(--blue);
 }
 
-.work-grid-container div:hover {
-    mix-blend-mode: color-burn;
+
+.background {
+    background-color: var(--blue);
 }
 
-.footer-container a:hover {
-    color: var(--blue);
-    font-weight: bold;
-    text-shadow: 0px 0px 20px var(--blue);
-}
-
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-template-rows: repeat(4, 1fr);
-}
-
-.footer-grid-item.contact-me {
-    padding-top: 0px;
-    font-size: 35px;
-    grid-row: 1 / span 4;
-    padding-right: 10px;
-    text-align: right;
-    border-right: 2px solid var(--heading-borders);
-    float: left; 
-    margin-right: 1vw;   
-    width: 12vw;
-}
-
-.footer-grid-item .phone {
-    grid-row: 3 span / 1;
-    grid-column: 1 / span 1;
-}
-
-.footer-grid-item .email {
-    grid-row: 3 span / 1;
-    grid-column: 2 / span 1;
-}
-
-.footer-grid-item .gitHub {
-    grid-row: 3 span / 1;
-    grid-column: 3 span / 1;
-}
+/* hero section */
 
 .hero {
-    height: 100vh;
+    height: 65vh;
     background-image: url("../assets/images/detroit-skyline.jpeg");
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -126,6 +90,8 @@ body {
     padding-bottom: 15px;
     padding-right: 15px;
 }
+
+/* about me section */
 
 .about-me-wrapper {
     display: flex;
@@ -161,6 +127,12 @@ body {
     grid-row: 3 / span 2;
 }
 
+/* work section */
+
+.work-grid-container div:hover {
+    mix-blend-mode: color-burn;
+}
+
 .work-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -175,6 +147,7 @@ body {
     grid-template-columns: 1fr repeat(2, 2fr);
     grid-template-rows: repeat(15, 1fr);
     gap: 10px 10px;
+    height: 35rem;
 }
 
 .work-item.work-title {
@@ -253,6 +226,43 @@ body {
     border: .25vw solid var(--border-color);
 }
 
-.background {
-    background-color: var(--blue);
+/* footer */
+
+.footer-container a:hover {
+    color: var(--blue);
+    font-weight: bold;
+    text-shadow: 0px 0px 20px var(--blue);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.footer-grid-item.contact-me {
+    padding-top: 0px;
+    font-size: 35px;
+    grid-row: 1 / span 4;
+    padding-right: 10px;
+    text-align: right;
+    border-right: 2px solid var(--heading-borders);
+    float: left; 
+    margin-right: 1vw;   
+    width: 12vw;
+}
+
+.footer-grid-item .phone {
+    grid-row: 3 span / 1;
+    grid-column: 1 / span 1;
+}
+
+.footer-grid-item .email {
+    grid-row: 3 span / 1;
+    grid-column: 2 / span 1;
+}
+
+.footer-grid-item .gitHub {
+    grid-row: 3 span / 1;
+    grid-column: 3 span / 1;
 }

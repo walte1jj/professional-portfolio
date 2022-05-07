@@ -11,8 +11,6 @@ function navigate(input) {
         window.open("https://walte1jj.github.io/Horiseon/");
     } else if (input == "taskmaster-pro") {
         window.open("https://walte1jj.github.io/taskmaster-pro/"); 
-    } else if (input == "coding-quiz") {
-        window.open("https://walte1jj.github.io/Coding-Quiz-Challange/");
     } else {
         return true;
     }
