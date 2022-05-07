@@ -170,9 +170,9 @@ body {
 }
 
 .work-grid-container {
-    width: 90%;
+    width: 80%;
     display: grid;
-    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-columns: 1fr repeat(2, 2fr);
     grid-template-rows: repeat(15, 1fr);
     gap: 10px 10px;
 }
