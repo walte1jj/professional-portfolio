@@ -5,11 +5,11 @@
 }
 
 :root {
-    --header-footer-background-color: #404040;
-    --lightskyblue: lightskyblue;
-    --lightgray: lightgray;
-    --about-me-work-border: #333366;
-    --rgba-border-color-opacity: rgba(135,206,250,.8);
+    --header-background: #404040;
+    --blue: lightskyblue;
+    --lightgray-background: lightgray;
+    --heading-borders: #7b7b7e;
+    --border-color: rgba(135,206,250,.8);
 }
 
 html {
@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    background-color: var(--header-footer-background-color);
+    background-color: var(--header-background);
 }
 
 header h1 {
@@ -48,32 +48,19 @@ header a {
     padding-right: 10px;
     padding-bottom: 5px;
     text-decoration: none;
-    border-bottom: 2px solid var(--lightskyblue);
-    color: var(--lightskyblue);
+    border-bottom: 2px solid var(--blue);
+    color: var(--blue);
 }
 
 body {
-    background-color: var(--lightgray);
+    background-color: var(--lightgray-background);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*footer {
-    background-color: var(--header-footer-background-color);
-    color: var(--lightskyblue);
-}*/
-
-/*footer a {
-    text-decoration: none;
-    border-bottom: 2px solide var(--lightskyblue);
-    color: var(--lightskyblue);
-    font-size: 1.8vw;
-    font-weight: bold;
-}*/
-
 .nav-effects a:hover {
-    color: var(--lightskyblue);
+    color: var(--blue);
     font-weight: bold;
-    text-shadow: 0px 0px 20px var(--lightskyblue);
+    text-shadow: 0px 0px 20px var(--blue);
 }
 
 .work-grid-container div:hover {
@@ -81,14 +68,14 @@ body {
 }
 
 .footer-container a:hover {
-    color: var(--lightskyblue);
+    color: var(--blue);
     font-weight: bold;
-    text-shadow: 0px 0px 20px var(--lightskyblue);
+    text-shadow: 0px 0px 20px var(--blue);
 }
 
 .footer-container {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-template-rows: repeat(4, 1fr);
 }
 
@@ -98,7 +85,7 @@ body {
     grid-row: 1 / span 4;
     padding-right: 10px;
     text-align: right;
-    border-right: 2px solid var(--about-me-work-border);
+    border-right: 2px solid var(--heading-borders);
     float: left; 
     margin-right: 1vw;   
     width: 12vw;
@@ -124,7 +111,7 @@ body {
     background-image: url("../assets/images/detroit-skyline.jpeg");
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    background-size: 100% 100%;
+    background-size: 100% 85%;
     background-position: 100% 13%;
     background-attachment: fixed;
     display: flex;
@@ -151,7 +138,7 @@ body {
 .about-me-grid-container {
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
     grid-template-rows: repeat(4, 1fr);
     gap: 10px 10px;
 }
@@ -162,7 +149,7 @@ body {
     grid-row: 1 / span 4;
     padding-right: 10px;
     text-align: right;
-    border-right: 2px solid var(--about-me-work-border);
+    border-right: 2px solid var(--heading-borders);
     float: left; 
     margin-right: 1vw;   
     width: 12vw;
@@ -196,7 +183,7 @@ body {
     grid-row: 1 / span 12;
     text-align: right;
     padding-right: 10px;
-    border-right: 2px solid var(--about-me-work-border);
+    border-right: 2px solid var(--heading-borders);
     width: 12vw;
     float: left;
 }
@@ -211,7 +198,7 @@ body {
     padding-left: 0px;
     padding-bottom: 15px;
     text-align: left;
-    border: .25vw solid var(--rgba-border-color-opacity);
+    border: .25vw solid var(--border-color);
 }
 
 .work-item-project.work-day-scheduler {
@@ -224,7 +211,7 @@ body {
     padding-left: 0px;
     padding-bottom: 15px;
     text-align: left;
-    border: .25vw solid var(--rgba-border-color-opacity);
+    border: .25vw solid var(--border-color);
 }
 
 .work-item-project.run-buddy {
@@ -237,7 +224,7 @@ body {
     padding-left: 0px;
     padding-bottom: 15px;
     text-align: left;
-    border: .25vw solid var(--rgba-border-color-opacity);
+    border: .25vw solid var(--border-color);
 }
 
 .work-item-project.horiseon {
@@ -250,7 +237,7 @@ body {
     padding-left: 0px;
     padding-bottom: 15px;
     text-align: left;
-    border: .25vw solid var(--rgba-border-color-opacity);
+    border: .25vw solid var(--border-color);
 }
 
 .work-item-project.taskmaster-pro {
@@ -263,14 +250,9 @@ body {
     padding-left: 0px;
     padding-bottom: 15px;
     text-align: left;
-    border: .25vw solid var(--rgba-border-color-opacity);
+    border: .25vw solid var(--border-color);
 }
 
-.work-item-project.coding-quiz {
-    display: block;
-    color: var(--lightgray);
-}
-
-.span-background.project {
-    background-color: aqua;
+.background {
+    background-color: var(--blue);
 }
